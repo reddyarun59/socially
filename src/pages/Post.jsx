@@ -29,11 +29,13 @@ const Post = () => {
   },[params.postId])
   return (
     <div>
-      <h1>Post</h1>
+      {loading?<h1>Loading...</h1>:<div><h1>Post</h1>
       <div>
         {post.content}
         <img src={post.imgUrls} alt="shs" />
       </div>  
+      </div>}
+      
     </div>
   )
 }
