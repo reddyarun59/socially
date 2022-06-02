@@ -10,6 +10,7 @@ import SignIn from "./pages/SignIn"
 import Navbar from "./components/Navbar";
 import Search from "./pages/Search";
 import Bookmarks from "./pages/Bookmarks";
+import CreatePost from "./pages/CreatePost";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/post" element={<Post/>}/>
+          <Route path="/post/:postId" element={<Post/>}/>
           <Route path="/search" element={<Search/>} />
           <Route path="/bookmarks" element={<Bookmarks/>}/>
           <Route path="/profile" element={<PrivateRoute/>}>
@@ -25,6 +26,7 @@ function App() {
           </Route>
           <Route path="/sign-in" element={<SignIn />}/>
           <Route path="/sign-up" element={<SignUp/>}/>
+          <Route path="/create-post" element={<CreatePost/>}/>
         </Routes>
         <Navbar/>
       </Router>

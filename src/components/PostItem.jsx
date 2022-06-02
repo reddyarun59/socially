@@ -13,12 +13,12 @@ const PostItem = ({post, id}) => {
             </div>
             <div>
                 <Link to={`/post/${id}`}>
-                    <img src={post.profileImage[0]} alt="profileImage"/>
+                    <img src={post.imgUrls[0]} alt="profileImage"/>
                     <h1>{post.content}</h1>
                 </Link>
             </div>
             <div>
-                <span>{post.likes.likeCount}</span>
+                {/* <span>{post.likes.likeCount}</span> */}
             </div>
 
         </div>

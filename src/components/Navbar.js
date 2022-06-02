@@ -22,7 +22,7 @@ const Navbar = () => {
                     <AiOutlineSearch className="w-8 h-8"/>
                     <p>Search</p>
                 </li>
-                <li onClick={()=>navigate("/search")}>
+                <li onClick={()=>navigate("/create-post")}>
                     <MdOutlineAddBox className="w-8 h-8"/>
                     <p>Add Post</p>
                 </li>
